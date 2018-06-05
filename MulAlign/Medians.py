@@ -1,11 +1,11 @@
-import operator
 from statistics import median
+
 
 def create_seq_with_values_on_median_files(dictionaries: dict):
     items_to_median = dictionaries.items()
     strike_list = []
     tc_list = []
-    sp_list =[]
+    sp_list = []
     for item in items_to_median:
         strike_list.append(item[0])
         tc_list.append(item[1])
@@ -17,7 +17,7 @@ def create_seq_with_values_on_median_files(dictionaries: dict):
     strike_median_seqs_to_print = []
     tc_median_seqs_to_print = []
     sp_median_seqs_to_print = []
-    for key,value in dictionaries:
+    for key, value in dictionaries:
         if value[0] == strike_median:
             strike_median_seqs_to_print.append(key)
         if value[1] == tc_median:
